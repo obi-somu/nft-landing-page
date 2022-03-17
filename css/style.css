@@ -5,13 +5,13 @@
 /* GLOBAL STYLES */
 
 :root {
-  --font-primary: 'Poppins', sans-serif;
-  --font-secondary: 'Arvo', serif;
-  --font-code: 'Roboto', monospace;
-  --bg-color: #00163f;
-  --font-color: #ffffff;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Arvo", serif;
+  --font-code: "Roboto", monospace;
+  --bg-color: #0508a7;
+  --font-color: #ffbb00;
   --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
+  --accent-color: #693001bd;
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -22,6 +22,8 @@
 }
 
 body {
+  background-image: url("/images/background/ape.png");
+  background-size: cover;
   background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
@@ -33,7 +35,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
   padding: 1rem 2rem;
 }
@@ -42,6 +44,11 @@ body {
 
 header {
   box-shadow: var(--header-shadow);
+  /* background-image: url("/images/background/preview.png"); */
+  /* background-repeat: repeat; */
+  background-attachment: fixed;
+  background-size: cover;
+  height: none;
 }
 
 header .container {
@@ -56,8 +63,30 @@ header .container {
   align-items: center;
 }
 
-/* BUTTONS */
+.logo {
+  align-items: center;
+  align-content: center;
+  align-self: auto;
+}
 
+/* BUTTONS */
+.presale_btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--btn-bg-color);
+  color: rgba(2, 67, 245, 0.712);
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  /* box-shadow: 4px 4px 0 0 var(--accent-color); */
+  cursor: pointer;
+  position: relative;
+  text-decoration: dotted;
+}
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -69,7 +98,7 @@ header .container {
   font-size: 1rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  box-shadow: 4px 4px 0 0 var(--accent-color);
+  /* box-shadow: 4px 4px 0 0 var(--accent-color); */
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -107,7 +136,7 @@ section {
 
 .countdown ul {
   display: flex;
-  gap: 2rem
+  gap: 2rem;
 }
 .countdown .clock-item {
   list-style: none;
@@ -180,4 +209,3 @@ section {
     font-size: 1rem;
   }
 }
- 
