@@ -102,7 +102,13 @@ header .container {
   text-decoration: none;
   outline: none;
 }
-
+.p {
+  text-align: center;
+  font-style: italic;
+  text-transform: capitalize;
+  text-rendering: optimizeSpeed;
+  color: #ffffff;
+}
 .btn span {
   cursor: pointer;
   display: inline-block;
