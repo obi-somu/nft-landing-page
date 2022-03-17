@@ -70,19 +70,17 @@ header .container {
 }
 
 /* BUTTONS */
-.presale_btn {
+.btn {
   margin-top: 20px;
   display: inline-block;
   padding: 1rem 2rem;
   background: var(--btn-bg-color);
-  color: rgba(2, 67, 245, 0.712);
   font-family: var(--font-secondary);
   font-style: italic;
   font-weight: bold;
   font-size: 2rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  /* box-shadow: 4px 4px 0 0 var(--accent-color); */
   cursor: pointer;
   position: relative;
   text-decoration: dotted;
@@ -104,8 +102,30 @@ header .container {
   text-decoration: none;
   outline: none;
 }
-.btn:hover {
-  box-shadow: none;
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .wallet-btn {
