@@ -22,7 +22,7 @@
 }
 
 body {
-  background-image: url("/images/background/ape.png");
+  background-image: url("/images/background/apex.png");
   background-size: cover;
   background-color: var(--bg-color);
   display: flex;
